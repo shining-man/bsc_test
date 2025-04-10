@@ -52,7 +52,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          mkdocs build --clean
+          mkdocs build -f config/de/mkdocs.yml
+          mkdocs build -f config/en/mkdocs.yml
           mkdocs --version
 
       - name: Adjust permissions
