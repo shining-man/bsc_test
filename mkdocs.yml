@@ -29,14 +29,14 @@ plugins:
 extra_css:
   - css/extra.css
 
-#extra:
-#  alternate:
-#    - name: Deutsch
-#      link: /
-#      lang: de
-#    - name: English
-#      link: /en/ 
-#      lang: en
+extra:
+  alternate:
+    - name: Deutsch
+      link: /
+      lang: de
+    - name: English
+      link: /en/ 
+      lang: en
 
 markdown_extensions:
   - attr_list
