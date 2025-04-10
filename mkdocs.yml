@@ -1,0 +1,82 @@
+site_name: Battery Safety Contoller
+repo_url: https://github.com/shining-man/bsc_fw
+edit_uri: https://github.com/bsc-org/bsc/edit/main/docs
+
+theme:
+  name: material
+  logo: img/favicon.png
+  favicon: img/favicon.png
+  language: de
+  highlightjs: true
+
+  features:
+    - content.action.edit
+    - navigation.indexes
+    
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - blog:
+      blog_toc: true
+      post_url_format: "{file}"
+  - search
+  - mermaid2
+
+  - git-revision-date-localized:
+      enable_creation_date: false
+
+extra_css:
+  - css/extra.css
+
+#extra:
+#  alternate:
+#    - name: Deutsch
+#      link: /
+#      lang: de
+#    - name: English
+#      link: /en/ 
+#      lang: en
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+      
+nav:
+  - User Guide:
+    - Systemübersicht: system_overview.md
+    - Erste Schritte: first_steps.md
+    - Hardware: hardware.md
+    - BSC Konfiguration:
+      - Dashboard: dashboard.md
+      - Allgemein: settings_bsc.md
+      - Wechselrichter: settings_inverter.md
+      - Beispielkonfigurationen: beispiel_konfigurationen.md
+      - Das Log des BSC: log.md
+    - Unterstüzte Geräte:
+      - BMS: devices/bms.md
+      - Wechselrichter: devices/wechselrichter.md
+      - Externe Shunts: devices/externer_shunt.md
+    - MQTT: mqtt.md
+    - REST-API: restapi.md
+    - Troubleshooting: troubleshooting.md 
+    - Sonstiges: 
+      - Test ohne BSC Hardware: BSC_ohne_orig_hardware.md
+      - Bestückung Varianten: bestückung_varianten.md
+  - Insider: insider.md
+  - Issues:
+    - Issues: https://github.com/shining-man/bsc_fw/issues
+    - Issues (Nur für Sponsoren): https://github.com/bsc-org/bsc_fw_insider/issues
+  - Blog:
+    - blog/index.md
+  - Shop:
+    - BSC-Shop: https://www.BSC-shop.com
+    - BSC (LILYGO): https://www.aliexpress.com/item/1005007096164253.html
+  - About:
+    - Release Notes: https://github.com/shining-man/bsc_fw/releases
