@@ -1,7 +1,7 @@
 ---
-Date: 2025-04-06
-Authors: [Shiningman]
-Categories:
+date: 2025-04-06
+authors: [Shiningman]
+categories:
   - Release Notes (insider)
 ---
 
