@@ -48,7 +48,7 @@ plugins:
 
           
 extra_css:
-  - css/extra.css
+  - assets/css/extra.css
 
 #extra:
 #  alternate:
