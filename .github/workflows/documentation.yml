@@ -23,9 +23,7 @@ jobs:
         with:
           fetch-depth: 0
           sparse-checkout: |
-            config
             docs
-            overrides
 
       - name: Set up Python runtime
         uses: actions/setup-python@v5
@@ -54,22 +52,19 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          ls -l
-          mkdocs build -f config/de/mkdocs.yml
-          mkdocs build -f config/en/mkdocs.yml
-          ls -l
+          mkdocs build --clean
           mkdocs --version
 
       - name: Adjust permissions
         run: |
-          chmod -c -R +rX generated/ | while read line; do
+          chmod -c -R +rX site/ | while read line; do
             echo "::warning title=Invalid file permissions automatically fixed::$line"
           done
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: generated
+          path: site
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
