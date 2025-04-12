@@ -1,4 +1,5 @@
 site_name: Battery Safety Contoller
+site_url: https://shining-man.github.io/bsc_test/
 repo_url: https://github.com/shining-man/bsc_fw
 edit_uri: https://github.com/bsc-org/bsc/edit/main/docs
 
@@ -8,6 +9,7 @@ exclude_docs: overrides/
 
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: img/favicon.png
   favicon: img/favicon.png
   language: de
