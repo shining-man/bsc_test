@@ -20,16 +20,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-plugins:
-  - blog:
-      blog_toc: true
-      post_url_format: "{file}"
-  - search
-  - mermaid2
-
-  - git-revision-date-localized:
-      enable_creation_date: false
-      
+plugins:      
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
@@ -43,6 +34,16 @@ plugins:
         - locale: en
           name: English
           build: true
+          
+  - blog:
+      blog_toc: true
+      post_url_format: "{file}"
+  - search
+  - mermaid2
+
+  - git-revision-date-localized:
+      enable_creation_date: false
+
           
 extra_css:
   - css/extra.css
