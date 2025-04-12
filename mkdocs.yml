@@ -9,7 +9,7 @@ docs_dir: docs/
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  #custom_dir: docs/overrides
   logo: assets/img/favicon.png
   favicon: img/favicon.png
   language: de
