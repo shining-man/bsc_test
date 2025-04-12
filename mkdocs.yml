@@ -10,7 +10,7 @@ exclude_docs: overrides/
 theme:
   name: material
   custom_dir: docs/overrides
-  logo: img/favicon.png
+  logo: assets/img/favicon.png
   favicon: img/favicon.png
   language: de
   highlightjs: true
