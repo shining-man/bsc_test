@@ -30,7 +30,7 @@ If a smartphone is used, the web address could not be dissolved. If this problem
 ### Flashes of an unprogrammed board
 * The four downloadable files must be flashed manually for the initial commissioning of an unprocessed board.  
 The current releases can be found [hier](https://github.com/shining-man/bsc_fw/releases).  
-For this purpose, a USB-serial converter with **3.3V level** must be connected to the BSC hardware on the three-pole pen strip J2 (labeled with "Prog").  
+For this purpose, a USB-serial converter with **3.3V level** must be connected to the BSC hardware on the three-pole pen strip J2 (labeled with "prog").  
 A 5V converter can damage the controller.  
 
 A USB port is usually available directly with the ESP32 DEV boards. Later updates can be made via the web interface.

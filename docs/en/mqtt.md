@@ -76,7 +76,7 @@ The same procedure works via visual studio code with the Addon "Uuid Generator o
 [BSC-Neey1_BLE.txt](files/mqtt_neey1_ble.txt)
 
 ### Integrate existing MQTT configuration in a new directory
-If a dedicated MQTT.YAML was used in advance in the configal directory, it can simply be copied and used in the directory just generated.  
+If a dedicated MQTT.YAML was used in advance in the configal directory, it can simply be copied and used in the directory just created.  
 It should be noted that the command "Sensor:" may no longer be available in the outsourced configuration files.  
 Furthermore, the definitions must now be moved to the left.  
 `` `Yaml

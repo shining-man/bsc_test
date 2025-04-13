@@ -37,7 +37,7 @@ The voltage supply should be redundant, i.e. a reliability of the care. In this 
 If necessary, it is possible to expand voltage supply to more than 5V (e.g. 12V / 24V). The following conditions must be observed (be careful, the circuit board marking has changed between different hardware visions. These are always given as follows as HWREV < 2.5 / HwRev > = 2.5):
 
 * JP28 / R61 (supply voltage for the BSC components): is usually bridged and must be separated for higher supply voltages 5V.  
-The component can be found on the back of the circuit board, right next to the solemnity connections of U19.
+The component can be found on the back of the circuit board, right next to the U19 solder connections.
 * JP29 / R91 & JP25 (relay voltage supply):
   * When using 5V relay, no change to these jumpers is necessary
   * If a higher supply voltage> 5V is desired for the relay without loading U19
