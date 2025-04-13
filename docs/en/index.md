@@ -1,45 +1,45 @@
-# Battery Safety Controller (BSC) – <br>Der flexible Controller für DIY-Batterien
+# Battery Safety Controller (BSC)-<br> The flexible controller for DIY batteries
 <img src="/assets/img/bsc_display.png" width="600">
-**EN Test**  
-Der **Battery Safety Controller (BSC)** ist ein frei konfigurierbarer Controller, der für eine Vielzahl von Steuerungs- und Überwachungsaufgaben in DIY-Batteriesystemen eingesetzt werden kann. Der BSC übernimmt die zentrale Steuerung des Energy-Sorange-Systems und kann als zusätzliches Sicherheitslevel neben dem BMS fungieren.
 
-## Der BSC besteht aus zwei Komponenten:
-1. **BSC-Hardware** – Sie fungiert als Middleware zwischen dem BMS und dem Wechselrichter. Ein Vorteil der BSC-Hardware ist ihr sicherer Betrieb: Alle physischen Schnittstellen sind galvanisch isoliert.
-2. **BSC-Software** – Diese macht die BSC-Hardware zu einem frei konfigurierbaren Controller, der für eine Vielzahl von Steuerungs- und Überwachungsaufgaben in DIY-Batteriesystemen verwendet werden kann.
+The **Battery Safety Controller (BSC)** is a freely configurable controller that can be used for a variety of control and monitoring tasks in DIY battery systems. The BSC takes over the central control of the energy-orange system and can act as an additional security level next to the BMS.
 
-## Einsatzmöglichkeiten des BSC
+## The BSC consists of two components:
+1. **BSC hardware** - It acts as middleware between the BMS and the inverter. One advantage of the BSC hardware is your safe operation: all physical interfaces are galvanically isolated.
+2. **BSC software**-This makes the BSC hardware a freely configurable controller that can be used for a variety of control and monitoring tasks in DIY battery systems.
 
-### 1. Überwachung von verbundenen Geräten (seriell, Bluetooth)
-Der BSC kann die Daten von angeschlossenen Geräten (BMS, Balancer, Temperatursensoren) via MQTT an einen Broker senden, um sie grafisch darzustellen (z.B. in Grafana) oder weiter zu verarbeiten, z.B. in einem Automatisierungssystem wie **ioBroker**, **NodeRed** oder **Home Assistant**.
+## Possibilities of the BSC
 
-### 2. Lade-Steuerung
-Der BSC nutzt die Daten der angeschlossenen Geräte, um den Wechselrichter (Victron, Solis, DEYE, etc.) zu steuern, der über den CAN-Bus verbunden ist. Hierbei stehen mehrere Funktionen zur Verfügung, um die Lade-Steuerung an das eigene DIY-Batteriesystem anzupassen:
+### 1. Monitoring of connected devices (serial, bluetooth)
+The BSC can send the data of connected devices (BMS, balancers, temperature sensors) to a broker via MQTT to graphically present them (e.g. in Grafana) or continue to process it, e.g. in an automation system such as **Iobroker**, **Nodered** or **Home Assistant**.
 
-- Zellspannungsabhängige Drosselung des Ladestroms
-- Reduzierung des Ladestroms bei Zellabweichungen
-- SoC-abhängige Reduktion des Ladestroms
-- Ladeabschaltung: Verhindert kontinuierliches Nachladen, wenn die Batterie voll ist
-- Zusammenführung der Daten aus den einzelnen physischen Batteriepaketen zu einem virtuellen Gesamtbatteriepaket unter Berücksichtigung zahlreicher Parameter, z.B. ob das Batteriepaket überhaupt lädt oder entlädt.
-- Und noch einges mehr ...
+### 2. Charging control
+The BSC uses the data of the connected devices to control the inverter (Victron, Solis, Deye, etc.) connected via the CAN bus. There are several functions available to adapt the loading control to your own DIY battery system:
 
-### 3. Zweites Sicherheitslevel neben dem BMS
-Der BSC kann verschiedene konfigurierbare Parameter auf den angeschlossenen Geräten überwachen, um ein zusätzliches Sicherheitslevel zu schaffen. Überwachte Parameter umfassen:
+- Cell voltage -dependent throttling of the charging current
+- Reduction of the charging current in cell deviations
+- SOC-dependent reduction in the charging current
+- Load shutdown: prevents continuous reloading when the battery is full
+- Merging of the data from the individual physical battery packages into a virtual overall battery package, taking into account numerous parameters, e.g. whether the battery package loads or discharges at all.
+- And more ...
 
-- Regelmäßige Antwort des angeschlossenen BMS
-- Zellspannungen (min/max)
-- Gesamte Spannung (min/max)
-- Temperaturen
+### 3. Second security level next to the BMS
+The BSC can monitor various configurable parameters on the connected devices to create an additional security level. Superior parameters include:
 
-Diese Daten können verwendet werden, um beispielsweise Relaisausgänge zu steuern und einen Lasttrennschalter auszulösen.
+- Regular answer of the connected BMS
+- Cell voltages (min/max)
+- Entire voltage (min/max)
+- Temperatures
 
-### 4. Temperaturüberwachung
-Es können bis zu **64 OneWire-Temperatursensoren** (DS18B20) angeschlossen und überwacht werden. Verschiedene Regelungen sind möglich:
+This data can be used to control relay outputs, for example, and to trigger a leak can be triggered.
 
-- Überwachung des Maximalwerts
-- Überwachung des Minimalwerts
-- Überwachung des Maximalwerts mit einem Sensor als Referenzwert
-- Überwachung der Differenzwerte
+### 4. Temperature monitoring
+Up to **64 OneWire temperature sensors** (DS18B20) can be connected and monitored. Different regulations are possible:
 
-Alle Einstellungen können flexibel über eine Web-Oberfläche parametriert werden.
+- Monitoring of the maximum value
+- Monitoring of the minimum value
+- Monitoring the maximum value with a sensor as a reference value
+- Monitoring of the difference values
 
-Der **Battery Safety Controller** bietet eine vielseitige und anpassbare Lösung für die Überwachung und Steuerung von DIY-Batteriesystemen. Ideal für anspruchsvolle Anwendungen, die eine zusätzliche Sicherheitsebene und umfangreiche Steuerungsmöglichkeiten benötigen.
+All settings can be parameterized flexibly via a web interface.
+
+The **Battery Safety Controller** offers a versatile and customizable solution for monitoring and controlling DIY battery systems. Ideal for demanding applications that require an additional security level and extensive control options.

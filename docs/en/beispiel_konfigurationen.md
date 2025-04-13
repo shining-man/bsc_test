@@ -1,11 +1,11 @@
 ## Important NOTE! Read first!
-The settings and configuration suggestions listed here are based on experience of users and are specially developed for LIFEPO4-based cells. They only serve as a guide and represent a **Initial design** for a possible configuration with the devices described.
+The settings and configuration suggestions listed here are based on experience of users and are specially developed for LIFEPO4-based cells. They only serve as a guide and represent a **Initial design** for a possible configuration with the devices described.  
 
-Please note that we cannot guarantee or guarantee the correctness, completeness or applicability of the information provided. The correct adaptation of these settings to your specific system requires well -founded technical knowledge. It is your responsibility to carefully check, understand and adapt the information provided before implementing it in your system.
+Please note that we cannot guarantee or guarantee the correctness, completeness or applicability of the information provided. The correct adaptation of these settings to your specific system requires well -founded technical knowledge. It is your responsibility to carefully check, understand and adapt the information provided before implementing it in your system.  
 
-We strongly advise against taking over the attitudes shown without reflection. Take the necessary time to understand the proposed configurations as a whole and ensure that you are suitable for your individual requirements and systems. Improper use can lead to damage to the devices, the batteries or even endanger your security.
+We strongly advise against taking over the attitudes shown without reflection. Take the necessary time to understand the proposed configurations as a whole and ensure that you are suitable for your individual requirements and systems. Improper use can lead to damage to the devices, the batteries or even endanger your security.  
 
-**A notice:** The information listed here is at your own risk. We assume no liability for direct or indirect damage that could arise from the application of the available settings.
+**A notice:** The information listed here is at your own risk. We assume no liability for direct or indirect damage that could arise from the application of the available settings.  
 
 ## Configuration examples
 ### 5x JK-InverterBMS 200A (16S); 2x Victron Multiplus 5000
@@ -17,8 +17,8 @@ We strongly advise against taking over the attitudes shown without reflection. T
 
 #### BSC settings inverter
 ##### Generally
-Serial 6 was set here as a data source (Master) BMS, since the highest temperatures occur through the highest position in the stack.
-This temperature is used to transfer the "battery temperature" to Venus OS. Sensor number 1 usually had the highest temperature in this environment.
+Serial 6 was set here as a data source (Master) BMS, since the highest temperatures occur through the highest position in the stack.  
+This temperature is used to transfer the "battery temperature" to Venus OS. Sensor number 1 usually had the highest temperature in this environment.  
 ![](img/beispielconfig/beispielcfg_inverter_general_1.png) {Width = "450"}
   
 ![](img/beispielconfig/beispielcfg_inverter_general_2.png) {Width = "450"}
