@@ -24,10 +24,10 @@ For example, it makes sense to generate a file for each hardware connected.
 
 The following program line must be stored in the "Config/Configuration.yaml":
 
-`` `Yaml
-MQTT:
-  - Sensor :! Include _you_ Merge_list MQtts/
-`` `
+```yaml
+mqtt:
+  - sensor: !include_dir_merge_list mqtts/
+```
 The individual MQTT configurations are then stored in a subdirectory called "MQTTS".
 This must be created manually.
 
@@ -79,39 +79,39 @@ The same procedure works via visual studio code with the Addon "Uuid Generator o
 If a dedicated MQTT.YAML was used in advance in the configal directory, it can simply be copied and used in the directory just created.  
 It should be noted that the command "Sensor:" may no longer be available in the outsourced configuration files.  
 Furthermore, the definitions must now be moved to the left.  
-`` `Yaml
-#### BSC inverter
+```yaml
+#### BSC Inverter
 
-    - State_topic: BSC/Inverter/Charge Current Soll
-Name: DC charging current should
-Unique_ID: XXXXX-XXX-XXX-XXXXXXX
-State_Class: Measurement      
-Device_Class: Current
-ICON: MDI: Current-DC
-Unit _of_ Measurement: "A"
-Device:
-{
-Identifiers: ["BSC-Inverter"],
-Manufacturer: "BSC",
-Model: "BSC",
-Name: "BSC-Inverter",
-}
+    - state_topic: bsc/inverter/chargeCurrentSoll
+      name: DC-Ladestrom Soll
+      unique_id: xxxxx-xxx-xxx-xxx-xxxxxxx
+      state_class: measurement      
+      device_class: current
+      icon: mdi:current-dc
+      unit_of_measurement: "A"
+      device:
+        {
+          identifiers: ["BSC-Inverter"],
+          manufacturer: "BSC",
+          model: "BSC",
+          name: "BSC-Inverter",
+        }
 
-    - State_topic: BSC/Inverter/Discharge Current Soll
-Name: DC enthus to
-Unique_ID: XXXXX-XXX-XXX-XXXXXXX
-State_Class: Measurement      
-Device_Class: Current
-ICON: MDI: Current-DC
-Unit _of_ Measurement: "A"
-Device:
-{
-Identifiers: ["BSC-Inverter"],
-Manufacturer: "BSC",
-Model: "BSC",
-Name: "BSC-Inverter",
-}
-`` `
+    - state_topic: bsc/inverter/dischargeCurrentSoll
+      name: DC-Entladestrom Soll
+      unique_id: xxxxx-xxx-xxx-xxx-xxxxxxx
+      state_class: measurement      
+      device_class: current
+      icon: mdi:current-dc
+      unit_of_measurement: "A"
+      device:
+        {
+          identifiers: ["BSC-Inverter"],
+          manufacturer: "BSC",
+          model: "BSC",
+          name: "BSC-Inverter",
+        }
+```
 
 ### Useful tools
 Automatic creation of the BSC in HA: <a href="https://github.com/dominikfe/ha_bsc_discovery_automation" target="_blank"> https://github.com/dominikfe/ha_bsc_discovery_automation[MDPROTECT1] </a>

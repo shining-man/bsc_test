@@ -123,15 +123,15 @@ If the values ​​for electricity and cell voltages no longer change regularly
 The "Plausibility Check" offers early warning in the event of irregularities and supports the reliable function and safety of the entire system.  
 
 **How the plausibility check**:
-`` `Mermaid
-Flowchart TD
-n1 ["plausibility check"] -> n7 ["is electricity <'electricity threshold'"]
-N7 -> N8 ["Cell voltages change 'ZEIT 2' not"]
-N8 -> N4 ["Trigger becomes active"]
-n1 -> n6 ["is electricity> = 'electricity threshold'"]
-N6 -> N10 ["Cell voltages change 'time 1' not"]
-N10 -> N4
-`` `
+```mermaid
+flowchart TD
+	n1["Plausibility check"] --> n7["Ist Strom &lt; 'Strom Schwellwert'"]
+	n7 --> n8["Zellspannungen ändern sich 'Zeit 2' nicht"]
+	n8 --> n4["Trigger wird aktiv"]
+	n1 --> n6["Ist Strom >= 'Strom Schwellwert'"]
+	n6 --> n10["Zellspannungen ändern sich 'Zeit 1' nicht"]
+	n10 --> n4
+```
 
 #### Value Adjustment for SOC transmission to the inverter
 ![](img/settings/settings_value_adjustment_soc.png) {Width = "500"}  
@@ -320,15 +320,15 @@ For the transfer of the data, a duration of around 0.5 to 1 second per package c
 
 Below you will find an example of a Yaml code that can be used to create a sensor to display the value of "Setpoint_CC" in Home Assistant:
 
-`` `Yaml
-Platform: rest
-Name: Bscapi _setpoint_ CC
-Resource: http://192.x.x.x/restapi
-Value _template: "{{value_ JSON ['inverter'] ['Setpoint_cc']} "
-Unit _of_ Measurement: "A"
-State_Class: "Measurement"
-ICON: "MDI: API"
-`` `
+```yaml
+platform: rest
+name: bscapi_setpoint_cc
+resource: http://192.x.x.x/restapi
+value_template: "{{ value_json['inverter']['setpoint_cc'] }}"
+unit_of_measurement: "A"
+state_class: "measurement"
+icon: "mdi:api"
+```
 
 ## Firmware update
 A firmware update can be initiated directly via the menu.  

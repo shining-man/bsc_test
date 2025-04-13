@@ -60,6 +60,9 @@ extra_css:
 #      link: /en/ 
 #      lang: en
 
+hooks:
+  - hooks/on_config.py
+  
 markdown_extensions:
   - attr_list
   - pymdownx.critic
