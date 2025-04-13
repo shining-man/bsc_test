@@ -22,7 +22,8 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-plugins:      
+plugins:   
+  - redirects   
   - i18n:
       docs_structure: folder
       fallback_to_default: true
