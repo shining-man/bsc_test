@@ -1,5 +1,6 @@
 site_name: Battery Safety Contoller
 docs_dir: 'index'
+site_dir: 'generated'
 
 theme:
   name: material
