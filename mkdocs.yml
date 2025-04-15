@@ -1,0 +1,29 @@
+site_name: Battery Safety Contoller
+docs_dir: 'index'
+
+theme:
+  name: material
+  logo: img/favicon.png
+  favicon: img/favicon.png
+  language: de
+  highlightjs: true
+
+  features:
+    - content.action.edit
+    - navigation.indexes
+    
+  icon:
+    repo: fontawesome/brands/github
+
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+      
