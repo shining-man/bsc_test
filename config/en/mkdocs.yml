@@ -1,18 +1,15 @@
 site_name: Battery Safety Contoller
-site_url: https://shining-man.github.io/bsc_test
+docs_dir: '../../docs/en'
+site_dir: '../../generated/en'
 repo_url: https://github.com/shining-man/bsc_fw
 edit_uri: https://github.com/bsc-org/bsc/edit/main/docs
 
-#docs_dir: docs/
-#exclude_docs: overrides/
-
-
 theme:
   name: material
-  #custom_dir: docs/overrides
-  logo: assets/img/favicon.png
+  custom_dir: '../../overrides/' 
+  logo: img/favicon.png
   favicon: img/favicon.png
-  language: de
+  language: en
   highlightjs: true
 
   features:
@@ -22,22 +19,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-plugins:   
-  - redirects   
-  - i18n:
-      docs_structure: folder
-      fallback_to_default: true
-      reconfigure_material: true
-      reconfigure_search: true
-      languages:
-        - locale: de
-          default: true
-          name: Deutsch
-          build: true
-        - locale: en
-          name: English
-          build: true
-          
+plugins:
   - blog:
       blog_toc: true
       post_url_format: "{file}"
@@ -46,23 +28,20 @@ plugins:
 
   - git-revision-date-localized:
       enable_creation_date: false
+      fallback_to_build_date: true
 
-          
 extra_css:
-  - assets/css/extra.css
+  - css/extra.css
 
-#extra:
-#  alternate:
-#    - name: Deutsch
-#      link: /
-#      lang: de
-#    - name: English
-#      link: /en/ 
-#      lang: en
+extra:
+  alternate:
+    - name: Deutsch
+      link: /de/
+      lang: de
+    - name: English
+      link: /en/ 
+      lang: en
 
-hooks:
-  - hooks/on_config.py
-  
 markdown_extensions:
   - attr_list
   - pymdownx.critic
