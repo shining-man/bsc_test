@@ -36,10 +36,10 @@ extra_css:
 extra:
   alternate:
     - name: Deutsch
-      link: /de/
+      link: ../de/
       lang: de
     - name: English
-      link: /en/ 
+      link: ../en/ 
       lang: en
 
 markdown_extensions:
