@@ -1,7 +1,7 @@
 site_name: Battery Safety Contoller
 docs_dir: '../../docs/de'
 site_dir: '../../generated/de'
-repo_url: https://github.com/shining-man/bsc_fw
+repo_url: https://github.com/shining-man/bsc_fw/
 edit_uri: https://github.com/bsc-org/bsc/edit/main/docs
 
 theme:
