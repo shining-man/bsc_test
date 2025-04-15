@@ -55,6 +55,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           ls -l
+          mkdocs build
           mkdocs build -f config/de/mkdocs.yml
           mkdocs build -f config/en/mkdocs.yml
           ls -l
