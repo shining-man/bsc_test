@@ -54,8 +54,8 @@ markdown_extensions:
       
 nav:
   - User Guide:
-    - Systemübersicht: system_overview.md
-    - Erste Schritte: first_steps.md
+    - Systemoverview: system_overview.md
+    - First Steps: first_steps.md
     - Hardware: hardware.md
     - BSC Konfiguration:
       - Dashboard: dashboard.md

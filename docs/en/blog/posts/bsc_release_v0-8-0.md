@@ -4,10 +4,9 @@ authors: [shiningman]
 categories:
   - Release Notes (Insider)
 ---
-
-[IMG _Dashboard]: Release_ V0-8-0_de/Dashboard.png
-[IMG _Charging current limitation grapha]: Release_ V0-8-0_de/charging current limitation grafana.png
-[IMG _Charging current limit of_ V0-8-0_DE/charging current limitation vrm.png
+[img_dashboard]: release_v0-8-0/dashboard.png
+[img_LadestrombegrenzungGrafana]: release_v0-8-0/LadestrombegrenzungGrafana.png
+[img_LadestrombegrenzungVrm]: release_v0-8-0/LadestrombegrenzungVrm.png
 
 # Version 0.8.0 (DE)
 This version brings with it some improvements and extensions, especially the new **Dashboard**. Below is an overview of all changes since the last stable version:

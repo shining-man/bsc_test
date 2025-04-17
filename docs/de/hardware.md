@@ -24,8 +24,8 @@ Um eine fehlerfreie Installation zu gewährleisten, beachten Sie bitte folgende 
   4. **Illustrationen und praktische Hinweise:**  
   Die in dieser Dokumentation enthaltenen Abbildungen dienen lediglich der Veranschaulichung. Überprüfen Sie daher immer die Markierungen und Beschriftungen auf Ihrer Platine, um die korrekten Anschlüsse sicherzustellen.
 
-![](img/hardware/hw_stecker_9pol.png){ width="300" }
-![](img/hardware/hw_stecker_6pol.png){ width="300" }
+![](/img/hardware/hw_stecker_9pol.png){ width="300" }
+![](/img/hardware/hw_stecker_6pol.png){ width="300" }
 
 ## Stromversorgung
 Die jeweils zu nutzenden Pins finden Sie als "V IN1" für "+" und GND für "-" aufgedruckt auf Ihrer PCB. Der Betrieb der BSC-Hardware ist in der Standard-Auslieferung für 5V (>=1,5A) ausgelegt. Als stabile Lösung in Sachen Netzteile haben sich Hutschienen-Varianten der Firma Meanwell bewährt, welche man über den BSC-Shop erwerben kann.

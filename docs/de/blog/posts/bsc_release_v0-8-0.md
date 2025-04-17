@@ -5,9 +5,9 @@ categories:
   - Release Notes (Insider)
 ---
 
-[img_dashboard]: release_v0-8-0_de/dashboard.png
-[img_LadestrombegrenzungGrafana]: release_v0-8-0_de/LadestrombegrenzungGrafana.png
-[img_LadestrombegrenzungVrm]: release_v0-8-0_de/LadestrombegrenzungVrm.png
+[img_dashboard]: release_v0-8-0/dashboard.png
+[img_LadestrombegrenzungGrafana]: release_v0-8-0/LadestrombegrenzungGrafana.png
+[img_LadestrombegrenzungVrm]: release_v0-8-0/LadestrombegrenzungVrm.png
 
 # Version 0.8.0 (DE)
 Diese Version bringt einige Verbesserungen und Erweiterungen mit sich, insbesondere das neue **Dashboard**. Nachfolgend eine Übersicht aller Änderungen seit der letzten stabilen Version:
