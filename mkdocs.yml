@@ -1,12 +1,15 @@
 site_name: Battery Safety Contoller
-docs_dir: 'index'
-site_dir: 'generated'
+docs_dir: '../../docs/en'
+site_dir: '../../generated/en'
+repo_url: https://github.com/shining-man/bsc_fw
+edit_uri: https://github.com/bsc-org/bsc/edit/main/docs
 
 theme:
   name: material
+  custom_dir: '../../overrides/' 
   logo: img/favicon.png
   favicon: img/favicon.png
-  language: de
+  language: en
   highlightjs: true
 
   features:
@@ -16,7 +19,28 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+plugins:
+  - blog:
+      blog_toc: true
+      post_url_format: "{file}"
+  - search
+  - mermaid2
 
+  - git-revision-date-localized:
+      enable_creation_date: false
+      fallback_to_build_date: true
+
+extra_css:
+  - css/extra.css
+
+extra:
+  alternate:
+    - name: Deutsch
+      link: ../de/
+      lang: de
+    - name: English
+      link: ../en/ 
+      lang: en
 
 markdown_extensions:
   - attr_list
@@ -28,3 +52,35 @@ markdown_extensions:
   - toc:
       permalink: true
       
+nav:
+  - User Guide:
+    - Systemoverview: system_overview.md
+    - First steps: first_steps.md
+    - Hardware: hardware.md
+    - BSC Configuration:
+      - Dashboard: dashboard.md
+      - General: settings_bsc.md
+      - Inverter: settings_inverter.md
+      - Example configurations: beispiel_konfigurationen.md
+      - The log of the BSC: log.md
+    - Supported devices:
+      - BMS: devices/bms.md
+      - Inverter: devices/wechselrichter.md
+      - External shunts: devices/externer_shunt.md
+    - MQTT: mqtt.md
+    - REST-API: restapi.md
+    - Troubleshooting: troubleshooting.md 
+    - Miscellaneous: 
+      - Test without BSC hardware: BSC_ohne_orig_hardware.md
+      - Assembly variants: bestückung_varianten.md
+  - Insider: insider.md
+  - Issues:
+    - Issues: https://github.com/shining-man/bsc_fw/issues
+    - Issues (For sponsors only): https://github.com/bsc-org/bsc_fw_insider/issues
+  - Blog:
+    - blog/index.md
+  - Shop:
+    - BSC-Shop: https://www.BSC-shop.com
+    - BSC (LILYGO): https://www.aliexpress.com/item/1005007096164253.html
+  - About:
+    - Release Notes: https://github.com/shining-man/bsc_fw/releases
