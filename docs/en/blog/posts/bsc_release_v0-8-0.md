@@ -4,63 +4,63 @@ authors: [shiningman]
 categories:
   - Release Notes (Insider)
 ---
+
 [img_dashboard]: release_v0-8-0/dashboard.png
 [img_LadestrombegrenzungGrafana]: release_v0-8-0/LadestrombegrenzungGrafana.png
 [img_LadestrombegrenzungVrm]: release_v0-8-0/LadestrombegrenzungVrm.png
 
-# Version 0.8.0 (DE)
-This version brings with it some improvements and extensions, especially the new **Dashboard**. Below is an overview of all changes since the last stable version:
+# Version 0.8.0
+This version brings several improvements and enhancements, most notably the new **Dashboard**. Below is an overview of all changes since the last stable release:
 
-## 🌐 dashboard
-One of the biggest changes is the new dashboard. At a glance, it shows all system -relevant information and live data.
+## 🌐 Dashboard
+One of the biggest changes is the new dashboard. It provides a quick overview of all system-relevant information and live data.
 
 <!-- more -->
 
-! [IMG_Dashboard]
+![img_dashboard]
 
-## ✨ new functions
+## ✨ New Features
 
-- **Plausibility test for text input fields in the webui**  
-This function increases input safety and reduces configuration errors.
+- **Plausibility check for text input fields in the WebUI**  
+  This feature improves input reliability and reduces configuration errors.
 
-- **Immediate start of the autobalancer per trigger**  
-The autobalancer can now also be started directly via a trigger, which makes the process more flexible.
+- **Immediate start of the autobalancer via trigger**  
+  The autobalancer can now also be started directly via a trigger, offering more flexibility in operation.
 
 - **Additional options for the autobalancer**  
-The autobalancer now offers additional options to better adapt it to specific requirements.
-    - **Ballance-spg. send as soon as the start time reaches**  
-With this option, the balance voltage is sent as soon as the set starting time is reached.
-    - **For start cells-to-do-it-all → Step 'Wait for Start-Zellspg.'**
-With this option, when the defined start cell voltage is fallen below, the step is "Wait for Start-Zellspg." changed. This also resets the ongoing timers.
-    - **Cutoff from Step 'Wait for Start-Zellspg.' deactivate**  
-With this option, the Cutoff function is already in the step "Wait for Start-ZellSPG." Deactivated.
+  The autobalancer now offers extra options to better adapt it to specific requirements.
+    - **Send balance voltage as soon as start time is reached**  
+      With this option, the balance voltage is sent as soon as the defined start time is reached.
+    - **On start cell voltage drop → step 'Wait for start cell voltage'**  
+      If the defined start cell voltage is not reached, this option returns the process to the step “Wait for start cell voltage.” All running timers will be reset in this case.
+    - **Disable CutOff from step 'Wait for start cell voltage'**  
+      This option disables the CutOff feature already in the “Wait for start cell voltage” step.
 
+- **Dynamic voltage regulation to limit charging current**  
+  This feature dynamically adjusts the charging voltage to keep the charging current within the configured range. If the charging current exceeds or falls below the defined limits, the voltage is automatically corrected.  <br><br>
+  This function allows charging the battery only up to a specific SoC (State of Charge) to extend its lifespan.  <br><br>
+  The diagrams show a Victron system with active voltage regulation. It is clearly visible that the charging current is limited and no energy flows into the battery. Instead, the excess energy is fed into the grid, while the SoC remains almost constant over time.<br>
+  ![img_LadestrombegrenzungGrafana]
+  ![img_LadestrombegrenzungVrm]<br>
 
-- **Dynamic voltage control to limit the charging current**  
-With this function, the charging voltage is dynamically adjusted to keep the charging current within the configured corridor. If the charging current exceeds or below the defined area, the voltage is automatically corrected.  <br> <br>
-This function makes it possible to load the battery only up to a certain SOC (State of Charge) in order to extend its lifespan.  <br> <br>
-The diagrams show a Victron system with activated voltage control. It is clearly recognizable that the charging current is limited and no energy flows into the battery. Instead, the excess energy is fed into the network, while the SoC remains almost constant over time. <br>
-! [IMG_LADESTROM LITTION GRAFANA]
-! [IMG_LADESTROM LITTION VRM] <br>
+- **Support for PACE PC200 via RS232**  
+  The device can now also be read via the serial interface (RS232).
 
-- **Support of the Pace PC200 via RS232**  
-The device can now also be read out via the serial interface (RS232).
+## 🔌 REST API Enhancements
 
-## 🔌 Rest API extensions
+- **New REST endpoint: `/restapi/io`**  
+  Digital inputs and relay statuses can now be queried via this new REST endpoint.
 
-- **New Rest-Endpoint: `/restapi/io`**  
-From now on, digital inputs and relay status can be queried via this new REST Endpoint.
+- **Setting `vTrigger` via the REST API**  
+  This extends control capabilities from external systems and allows for more flexible integration.
 
-- **Set `vTrigger` via the rest of the API**  
-This extends the control options via external systems and enables more flexible integration.
-
-## 🛠️ Adjustments & bug fixes
+## 🛠️ Adjustments & Bugfixes
 
 - **Adjustment of the temperature range for alarm rules**  
-The temperature range for the alarm rules has been optimized.
+  The temperature range for alarm rules has been optimized.
 
-- **Removal of data syrups in "Reduce charging current - SoC"**  
-A problem with the data types in connection with the SOC loader regulation has been fixed.
+- **Fix for data type issues in “reduce charging current – SoC”**  
+  A data type issue related to SoC charge control has been resolved.
 
-- **Troubleshoot when reading out the PIC data at SeplosV3**  
-A problem when reading the PIC data was fixed for the SeplosV3 platform.
+- **Bugfix when reading PIC data on SeplosV3**  
+  An issue with reading PIC data on the SeplosV3 platform has been fixed.

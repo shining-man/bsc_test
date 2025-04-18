@@ -1,7 +1,7 @@
 ## Info videos
 [www.youtube.com/@shining-man](http://www.youtube.com/@shining-man)  
-** Please note: Due to the further development of the BSC, there is no longer everything in the video!  
-The "New Webui" mentioned in the video is currently not available. Not even for sponsors! **
+**Please note: Due to the further development of the BSC, everything is no longer up to date in the video!**  
+**The "New Webui" mentioned in the video is currently not available. Not even for sponsors!**
 
 ## Further information
 For initial information and the commissioning first read the following further chapters:   
@@ -80,5 +80,5 @@ The prerequisite is that the board is programmed!
 * When the firmware starts for the first time, the BSC sets an AccessPoint with the name "BSC_* ".
 * After connecting to the AccessSpoint, this can be reached under the IP address 192.168.4.1 or BSC.info and can be configured.
 * Access data:
-    - Username: <notchange> BSC </notchange>
-    - Password: <notchange> BSC </notchange>
+    - Username: BSC
+    - Password: admin

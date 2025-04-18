@@ -1,7 +1,7 @@
 ## Info-Videos
 [www.youtube.com/@shining-man](http://www.youtube.com/@shining-man)  
-**Bitte beachten: Aufgrund der Weiterentwicklung des BSC, ist nicht mehr alles im Video aktuell!  
-Das im Video erwähnte "neue WebUi" steht aktuell nicht zur Verfügung. Auch nicht für Sponsoren!**
+**Bitte beachten: Aufgrund der Weiterentwicklung des BSC, ist nicht mehr alles im Video aktuell!**  
+**Das im Video erwähnte "neue WebUi" steht aktuell nicht zur Verfügung. Auch nicht für Sponsoren!**
 
 ## Weiterführende Informationen
 Für erste Informationen und die Inbetriebnahme zuerst folgende weitere Kapitel lesen:   
@@ -80,5 +80,5 @@ Voraussetzung ist, dass die Platine programmiert ist!
 * Beim ersten Start der Firmware stellt der BSC einen Accesspoint mit dem Namen "bsc_*" zur Verfügung.
 * Nach dem Verbinden mit dem Accesspoint ist dieser unter der IP-Adresse 192.168.4.1 oder bsc.info erreichbar und kann konfiguriert werden.
 * Zugangsdaten: 
-    - Benutzername: <notchange>bsc</notchange>
-    - Passwort: <notchange>bsc</notchange>
+    - Benutzername: bsc
+    - Passwort: admin

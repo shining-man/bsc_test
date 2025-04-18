@@ -24,11 +24,12 @@ Incorrect connections can cause damage to the BSC or components connected to ext
   4. **Illustrations and practical information:**  
 The illustrations contained in this documentation only serve to illustrate. Therefore, always check the markings and labels on your board to ensure the correct connections.
 
-![](/img/hardware/hw_stecker_9pol.png){ width="300" }
-![](/img/hardware/hw_stecker_6pol.png){ width="300" }
+![](img/hardware/hw_stecker_9pol.png){ width="300" }
+![](img/hardware/hw_stecker_6pol.png){ width="300" }
 
 ## Power supply
-The pins to be used can be found as "V In1" for "+" and GND for "-" printed on your PCB. The operation of the BSC hardware is designed in the standard delivery for 5V (> = 1.5a). As a stable solution in the power supplies, Haupschienen variants from the MEAULL company have proven themselves, which can be purchased via the BSC shop.
+The pins to be used can be found as "V In1" for "+" and GND for "-" printed on your PCB. The operation of the BSC hardware is designed in the standard delivery for 5V (> = 1.5a). As a stable solution in terms of power supplies, Haupschienen variants from the MEAULL company have proven themselves, which can be found via the <a href="https://bsc-shop.com" target="_blank"> BSC shop </a>
+can acquire.
 
 The voltage supply should be redundant, i.e. a reliability of the care. In this case, if a power supply no longer provides a voltage, the second intervention and the circuit board will continue without interruption. Thus, the board could be connected to a DC/DC power supply directly from the battery and an AC/DC power supply connected to the EVU network. The BSC offers two separate inputs for this. To define which voltage source the primary voltage source is, this should be set about 0.2V higher. Then the power supply of the BSC takes over the power supply with the higher voltage.
 
@@ -47,7 +48,8 @@ Note: With the BSC V2.3, the lettering of the jumper from JP29 is wrong! There i
     * HW-Rev> = 2.5
       * When using relay higher voltage, remove resistance R91 and set solder jumper JP25.
 * U19 is to be equipped with a DC DC converter for a **Higher supply voltage** larger 5V
-  * Suitable DCDC modules are offered in the BSC shop up to 27V.
+  * Up to 27V input voltage are in the <a href="https://bsc-shop.com" target="_blank"> BSC shop </a>
+Suitable DCDC modules offered.
 * Otherwise, a suitable DC-DC converter depends on the input voltage
 * The square soldering point at U19 is the 5V output of the DC/DC converter. Be sure to pay attention to polarity!
   * If 5V relays are used, please note that they are supplied with the U19 voltage controller, therefore use> = 1a DC-DC converter

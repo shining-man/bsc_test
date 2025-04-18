@@ -51,7 +51,7 @@ The Battery Safety Controller (BSC) ensures that the previously defined maximum 
 
 To prevent this, you can use this function to define a maximum current per pack. The BSC reacts automatically to the failure of a pack and adapts the maximum current to the remaining packs, so that the current never exceeds the specified value.
 
-Example: Suppose you have defined a maximum charging current of 180a and three packs, each defined a maximum current of 100a. If a pack fails, the remaining electricity of 200A would still be within the permissible framework. If another pack fails, the charging controller would automatically limit the current to 100a to protect the remaining pack from an over current.
+Example: Suppose you have defined a maximum charging current of 180a and three packs, each defined a maximum current of 100a. If a pack fails, the remaining electricity of 200A would still be within the permissible framework. If another pack fails, the charging controller would automatically limit the current to 100a to protect the remaining pack from an overcurrent.
 
 This function ensures that your system always works safely even if individual packs fail and no overcurrent situations arise.
 

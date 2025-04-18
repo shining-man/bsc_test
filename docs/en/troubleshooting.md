@@ -64,7 +64,7 @@ This can be checked in which you switch the devices on both sides without a powe
 From time to time there are devices without this built-in resistance, then only measure 120Ohm on the BSC page.  
 Here, however, you should be listening and the pin assignment should be meticulously checked again, as this is atypical.  
 
-If there are 120 ohm on both sides, you can connect both devices together and measure the resistance on the signal lines again in the unit.  
+If there are 120 ohm on both sides, you can connect both devices together and measure the resistance on the signal lines again in the electricity.  
 Now 60ohm should be displayed on the multimeter.  
 
 **2)**  
