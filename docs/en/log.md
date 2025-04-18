@@ -53,7 +53,7 @@ Indicates the type of the log entry:
 
 The currently active errors (set) can be queried via the REST API. In addition, they are clearly shown in the dashboard in the "Active Errors" area.
 
-> Note: The status is only available in the [Insider Version](insider.md)  
+> Note: The status is only available in the [Insider version](insider.md)  
 
 **B - severity**  
 Characterizes the classification of the log entry:  

@@ -14,7 +14,7 @@ Pole number: 4
 Raster size: 2.0mm  
 Order no.: JST PHR-4  
 
-![](../img/devices/devices_shunt_smartshunt_vedirect_stecker.png) {Width = "550"}
+![](../img/devices/devices_shunt_smartshunt_vedirect_stecker.png){  width="550" }
 
 #### Certer colors of an original ve.direct cable. (Without guaranteeing information on your cable)
 
@@ -26,7 +26,7 @@ Order no.: JST PHR-4
 |  4 | Black |
 
 #### Example of a UART/RS485 converter to be used
-![](../img/devices/devices_shunt_smartshunt_rs485_converter.png) {Width = "300"}
+![](../img/devices/devices_shunt_smartshunt_rs485_converter.png){  width="300" }
 
 It turned out that the Smartshunt cannot supply all types of UART/RS485 converter with electricity.  
 The converter should no longer absorb like 10mA (pulse max. 20ma/5ms).  
@@ -49,7 +49,7 @@ Various, preferably Chinese converter, have the wrong TXD/RXD printing. With the
 Settings -> Interfaces -> Serial -> Selection of the Victron Smartshunt
 
 #### Needed value trading
-![](../img/devices/devices_shunt_smartshunt_bsc_settings.png) {Width = "400"}
+![](../img/devices/devices_shunt_smartshunt_bsc_settings.png){  width="400" }
 
 Settings can be found as follows
 - Settings -> Inverter & loading -> General -> ValueHandling Multi -BMS -> SoC  

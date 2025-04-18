@@ -1,5 +1,5 @@
 # Battery Safety Controller (BSC)-<br> The flexible controller for DIY batteries
-<img src="/assets/img/bsc_display.png" width="600">
+<img src="img/bsc_display.png" width="600">
 
 The **Battery Safety Controller (BSC)** is a freely configurable controller that can be used for a variety of control and monitoring tasks in DIY battery systems. The BSC takes over the central control of the energy-orange system and can act as an additional security level next to the BMS.
 

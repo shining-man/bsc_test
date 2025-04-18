@@ -1,12 +1,12 @@
 # Dashboard
-> Note: The dashboard shown here is only available in the [Insider Version](insider.md)
+> Note: The dashboard shown here is only available in the [Insider version](insider.md)
 
 ## Overview
 
 The dashboard of the **Battery Safety Controller (BSC)** offers a quick overview of the entire system.  
 In individual tiles, relevant data on system status, inputs and outputs, loading and discharge regulations as well as the connected data devices are displayed.  
 
-![](img/dashboard/dashboard_1.png) {Width = "950"}  
+![](img/dashboard/dashboard_1.png){ width="950" }  
 
 ## Tile
 The individual tiles and their content are described in detail below.

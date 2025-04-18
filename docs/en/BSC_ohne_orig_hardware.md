@@ -45,11 +45,11 @@ A galvanically separate and tested RS485 adapter is, for example.
 To have different sources.  
 Including is three -wheeled (A / B / GND).  
 
-![](img/bsc_ohne_org_hw_rs485_converter.jpg) {Width = "450"}
+![](img/bsc_ohne_org_hw_rs485_converter.jpg){ width="450" }
 
 ### CAN converter
 For example, the following has been working reliably for the CAN interface in a prototype.  
 To have different sources.  
 Including is three -wheeled (Canh / Canl / GND).  
 
-![](img/bsc_ohne_org_hw_can_converter.jpg) {Width = "450"}
+![](img/bsc_ohne_org_hw_can_converter.jpg){ width="450" }

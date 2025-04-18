@@ -1,15 +1,15 @@
 # Inverter
 In this section, you can define the loading and unloading trading cladding in addition to the definition of the connected inverter.  
 All percentage limits are applied to the values ​​set in the "Basic data" category.  
-![](img/settings/settings_inverter_basisdaten.png) {Width = "950"}  
+![](img/settings/settings_inverter_basisdaten.png){  width="950" }  
 
 ## general
 ### CAN bus
 Here you can define the protocol to be used towards inverter.  
-The setting "Send Extended Data" can only be used for a connected Victron system. Further information can be viewed [hier](devices/wechselrichter.md#einstellungen-bsc).
+The setting "Send Extended Data" can only be used for a connected Victron system. Further information can be viewed [here](devices/wechselrichter.md#einstellungen-bsc).
 
 ### Valuehandling Multi-Bms
-![](img/settings/settings_inverter_soc.png) {Width = "450"}  
+![](img/settings/settings_inverter_soc.png){  width="450" }  
 With the "ValueHandling Multi-BMS" you have the option of configuring the State of Charge (SOC) for the transmission to the inverter. This enables precise control, which is used, based on the various sources and calculation methods. The available options are:
 
 - **Master source**  
@@ -51,17 +51,17 @@ The Battery Safety Controller (BSC) ensures that the previously defined maximum 
 
 To prevent this, you can use this function to define a maximum current per pack. The BSC reacts automatically to the failure of a pack and adapts the maximum current to the remaining packs, so that the current never exceeds the specified value.
 
-Example: Suppose you have defined a maximum charging current of 180a and three packs, each defined a maximum current of 100a. If a pack fails, the remaining electricity of 200A would still be within the permissible framework. If another pack fails, the charging controller would automatically limit the current to 100a to protect the remaining pack from an overcurrent.
+Example: Suppose you have defined a maximum charging current of 180a and three packs, each defined a maximum current of 100a. If a pack fails, the remaining electricity of 200A would still be within the permissible framework. If another pack fails, the charging controller would automatically limit the current to 100a to protect the remaining pack from an over current.
 
 This function ensures that your system always works safely even if individual packs fail and no overcurrent situations arise.
 
 
 ### Trigger at SOC
 With this function you can, for example, switch external device depending on the SoC value.  
-![](img/settings/settings_inverter_trigger_soc.png) {Width = "950"}  
+![](img/settings/settings_inverter_trigger_soc.png){  width="950" }  
 
 **Two examples of this:**    
-![](img/settings/settings_inverter_trigger_soc_beispiel.png) {Width = "450"}  
+![](img/settings/settings_inverter_trigger_soc_beispiel.png){  width="450" }  
 
 
 Triggered here ...  
@@ -79,14 +79,14 @@ So you have a hysteresis of 15%.
 
 ## Batch
 Example of a charging cycle including balancing, float and absorption voltage with the help of the BSC and a visualization via home assistant/Grafana:  
-![](img/settings/settings_inverter_charge_beispiel.png) {Width = "1300"}   
+![](img/settings/settings_inverter_charge_beispiel.png){  width="1300" }   
 
 ### Charging current per pack too big
-![](img/settings/settings_inverter_current_per_pack.png) {Width = "450"}  
+![](img/settings/settings_inverter_current_per_pack.png){  width="450" }  
 With this function, the charging current is automatically and dynamically adjusted to ensure that the maximum loading value of each battery pack is not exceeded. This intelligent regulation protects the battery from overflow.
 
 The following graphic illustrates the streams of three battery packs during a charging process:
-![](img/settings/settings_inverter_current_per_pack_example_1.png) {Width = "600"}  
+![](img/settings/settings_inverter_current_per_pack_example_1.png){  width="600" }  
 Green shows the current for pack 1, yellow of pack 2 and blue of Pack 3.
 
 It can be seen in the presentation that the maximum load current for Pack 1 (green) was reduced to 50a for a short time (this is visible in the middle of the diagram). After the value has been reduced, the (BSC) regulates the charging current dynamically and holds it on the set value of 50a.
@@ -131,8 +131,8 @@ As soon as the function is activated, the charging voltage is dynamically adjust
 The regulation comes into force only if the autobalancer is not active.  
 
 The diagrams show a Victron system with activated voltage control. It is clearly recognizable that the charging current is limited and no energy flows into the battery. Instead, the excess energy is fed into the network, while the SOC (State of Charge) remains almost constant over time.
-![](img/settings/settings_inverter_SpgRegLadestrombegrenzungGrafana.png) {Width = "950"}  
-![](img/settings/settings_inverter_SpgRegLadestrombegrenzungVrm.png) {Width = "950"}  
+![](img/settings/settings_inverter_SpgRegLadestrombegrenzungGrafana.png){ width="950" }  
+![](img/settings/settings_inverter_SpgRegLadestrombegrenzungVrm.png){ width="950" }  
 
 **Setting options:**
 
@@ -147,7 +147,7 @@ The function makes it possible to load the battery only up to a certain SoC in o
 
 ### Autobalancer
 The autobalance feature takes over the full balancing of your battery cells to ensure optimal performance and lifespan of the battery. The most important settings and processes are described below:
-![](img/settings/settings_inverter_charge_autobalance.png) {Width = "950"}  
+![](img/settings/settings_inverter_charge_autobalance.png){  width="950" }  
 
 **Autobal. Start (trigger)** *(This option is only available insiders)*  
 The trigger configured here makes it possible to start the autobalancer immediately if it is currently in the waiting time until the next interval. It should be noted that the trigger has to be put back on "low" after the start of the autobalancer.
@@ -176,7 +176,7 @@ The process is ended automatically as soon as the difference between the cell te
 The Timeout parameter determines the maximum time the balancing process is automatically canceled if the cell stresses could not be compensated for within the intended time frame. This protects the system from endless balancing cycles.
 
 **Extended options**  
-> Note: The extended options are only available in the [Insider Version](insider.md)
+> Note: The extended options are only available in the [Insider version](insider.md)
 
 - **Ballance-spg. send as soon as the start time reaches**  
 When this option is activated, the balance voltage is sent as soon as the set starting time is reached.  
@@ -229,7 +229,7 @@ This function controls the reloading of the cells based on the cell tension.
 
 ## Discharge
 ### Discharge stream of the cell voltage-dependent
-![](img/settings/settings_inverter_discharge_cellvoltage.png) {Width = "450"}  
+![](img/settings/settings_inverter_discharge_cellvoltage.png){  width="450" }  
 
 This function serves to adapt the discharge current based on the cell tension in order to extend the lifespan of the battery cells and to ensure their safety.
 

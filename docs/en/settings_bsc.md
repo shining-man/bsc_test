@@ -47,7 +47,7 @@ This combination of flexible trigger sources and configurable target campaigns e
 After calling the website via the integrated WLAN module (IP or BSC.info), the home board comes with a few basic information.  
 You can navigate to the respective functions via the side menu.
 
-![](img/settings/settings_dashboard.png) {Width = "950"}    
+![](img/settings/settings_dashboard.png){ width="950" }    
 
 | Kachel | Description |
 | ------------- | ------------- |
@@ -58,24 +58,24 @@ You can navigate to the respective functions via the side menu.
 | Trigger | Status of the ten possible trigger; 0 = no trigger, 1 = trigger |
 
 ## Live data
-![](img/settings/settings_livedaten.png) {Width = "950"}  
+![](img/settings/settings_livedaten.png){ width="950" }  
 "Fet State" describes the current FET loading/unloading state.  
 
-![](img/settings/settings_fet_state.png) {Width = "300"}  
+![](img/settings/settings_fet_state.png){ width="300" }  
 
 ## system
-![](img/settings/settings_system.png) {Width = "950"}  
+![](img/settings/settings_system.png){ width="950" }  
 
 Here you can find all system internal setting options, such as user names and passwords for WLAN and MQTT logins.  
 Please note that the Tilde sign (~) is currently not supported as a password sign <u> </u>.  
 
 ### Mqtt
-![](img/settings/settings_system_mqtt.png) {Width = "300"}    
+![](img/settings/settings_system_mqtt.png){ width="300" }    
 As soon as MQTT is activated and the associated IP address and the port are set, the BSC cyclically sends the data to the MQTT broker.
 
 **Vtrigger**  
 With "Remanenger Vtrigger" it can be determined which Vtrigger should be defined as saved. A saving Vtrigger ensures that its values ​​are automatically restored even after a restart (reboot) or a voltage failure.  
-More on the subject of Vtrigger under [MQTT](mqtt.md#virtual-trigger).
+More on the subject of Vtrigger under [Mqtt](mqtt.md#virtual-trigger).
 
 ### Timer
 If you use an external NTP server and have problems with time synchronization, you can also use the router of your network - this often works more stable.  
@@ -87,10 +87,10 @@ The IP address must then be specified in the BSC.
 In the Settings interfaces, what is connected to which interface is set. Here **not** is set what should happen with the data from a BMS or balancer, or when the relay output should switch. This is then done in the settings for the alarm rules or the inverter.
 
 ### Serial
-![](img/settings/settings_serial.png) {Width = "950"}  
+![](img/settings/settings_serial.png){ width="950" }  
 In this section you determine which hardware is connected to which serial port. In addition, it is necessary to configure the "Data Device mapping" section which serial interface is assigned which internal data device.
 
-You can find detailed information on the establishment of the Data Device mapping in the chapter [Data device mapping](#data-device-mapping)  
+You can find detailed information on the establishment of the Data Device mapping in the chapter [Data Device mapping](#data-device-mapping)  
 
 This configuration ensures that the connected hardware is correctly recognized and linked to the corresponding internal data devices.
 
@@ -103,11 +103,11 @@ This configuration ensures that the connected hardware is correctly recognized a
 All other interfaces shown can only be used with a connected serial extension.  
 
 **Support hardware**  
-![](img/settings/settings_unterstuetze_bms.png) {Width = "400"}  
+![](img/settings/settings_unterstuetze_bms.png){ width="400" }  
 The list of available hardware is continuously expanded in order to meet the requirements and needs of our users. The picture shown only serves as an illustration and represents an example.
 
 #### filter
-![](img/settings/settings_schnittstelle_filter.png) {Width = "400"}  
+![](img/settings/settings_schnittstelle_filter.png){ width="400" }  
 This filter serves to identify jumps in the cell tension and to filter out. The response threshold of the filter is set as a percentage compared to the previous valid value. As soon as the cell voltage exceeds the specified percentage, the new value is not adopted, but also not rated as a mistake.
 
 The "Number of RX errors" function enables the threshold to be determined from when a cell voltage deviation is regarded as an error. As soon as the set number of errors is exceeded, the timeline is no longer updated for the last valid package in the system.
@@ -115,7 +115,7 @@ The "Number of RX errors" function enables the threshold to be determined from w
 These functions ensure more precise and stable data processing by filtering temporary voltage jumps and preventing faulty packages.
 
 #### Plausibility Check
-![](img/settings/settings_schnittstelle_plausibility_check.png) {Width = "500"}  
+![](img/settings/settings_schnittstelle_plausibility_check.png){ width="500" }  
 The "plausibility check" is an important function that continuously monitors the current flow and the cell tension of the data devices connected to the system.  
 
 If the values ​​for electricity and cell voltages no longer change regularly over a longer period of time, this indicates that the BMS no longer sends any valid data. In this case, it can be assumed that there is a problem in the BMS.
@@ -134,7 +134,7 @@ flowchart TD
 ```
 
 #### Value Adjustment for SOC transmission to the inverter
-![](img/settings/settings_value_adjustment_soc.png) {Width = "500"}  
+![](img/settings/settings_value_adjustment_soc.png){ width="500" }  
 The "Value Adjustment" enables the inverter to transmit an adapted state of charge (SoC) depending on the cell tension. There are two operating modes available that cover different requirements and behaviors.  
 
 ##### Operating mode 1: Fixed SOC transmission when the cell tension is defined
@@ -164,7 +164,7 @@ This mode is particularly useful for BMS systems that do not report its own SOC,
 **Important NOTE:** Make sure that the entered cell voltages meet the specifications of the battery system used to ensure optimal function and safety.
 
 ### Data Device mapping
-![](img/settings/settings_data_device_mapping.png) {Width = "950"}
+![](img/settings/settings_data_device_mapping.png){ width="950" }
 
 The Data Device Mappings serve to assign the serial interface or the Bluetooth device to the internal data device used in the BSC (Battery System Controller).
 
@@ -179,7 +179,7 @@ If several devices are connected to a serial interface and the BMS (Battery Mana
 > **A notice:** The correct configuration of the Data Device Mappings is essential to ensure trouble -free functionality. Note the addressing rules of your BMS system.
 
 ### Relay outputs
-![](img/settings/settings_relais.png) {Width = "950"}  
+![](img/settings/settings_relais.png){ width="950" }  
 Here the basic settings for the relay outputs can be made.
 
 * **Triggering at**
@@ -197,7 +197,7 @@ The option enables the relay output to be flexibly switched between the operatin
 The logic with the triggers runs through the entire system. There are triggers, e.g. the digital inputs and there are trigger customers, e.g. the relay outputs.
 
 ### Digital inputs
-![](img/settings/settings_di.png) {Width = "950"}  
+![](img/settings/settings_di.png){ width="950" }  
 The basic settings for the digital inputs can be made here.
 
 * **Invertic receipt**
@@ -206,22 +206,22 @@ Here the entrance can be inverted
 Here the trigger can be set to which the entrance goes.   When the entrance becomes high, the trigger set here becomes active.  If the entrance is inverted, then the trigger is active at the entrance.
  
 ### OneWire
-![](img/settings/settings_onewire1_1.png) {Width = "950"}  
+![](img/settings/settings_onewire1_1.png){ width="950" }  
 Here the addresses of the OneWire temperature sensors are determined.    
 
 As soon as this one-time configuration page is called, the controller scans the bus to OneWire-Devices and displays it at the bottom of the page.  
 The devices shown in bold are new devices that are not yet stored in the OneWire configuration page.  
 This makes it easier to identify newly connected sensors.  
 
-![](img/settings/settings_onewire1_2.png) {Width = "950"}  
+![](img/settings/settings_onewire1_2.png){ width="950" }  
 
 ### OneWire II
-![](img/settings/settings_onewire2_1.png) {Width = "950"}  
+![](img/settings/settings_onewire2_1.png){ width="950" }  
 An offset for the respective OneWire temperature sensors can be set here.
 
 ### Bluetooth
 **Bluetooth is currently not available!**  
-![](img/settings/settings_onewire2_2.png) {Width = "950"}  
+![](img/settings/settings_onewire2_2.png){ width="950" }  
 Here, up to 7 Bluetooth devices can be determined from which the controller gets data.  
 To do this, the device type and the MAC address (in small letters) must be set.  
 
@@ -229,13 +229,13 @@ As soon as this configuration page is called, the controller scans cyclically ac
 And indicate the last 5 found at the bottom of the page.  
 
 **Supported hardware**  
-![](img/settings/settings_unterstuetze_bms_bt.png) {Width = "400"}  
+![](img/settings/settings_unterstuetze_bms_bt.png){ width="400" }  
 
 ## Alarm rules
 In the alarm rules you can set which data should be monitored by which devices.  
 
 ### BMS
-![](img/settings/settings_alarmrules_bms.png) {Width = "950"}   
+![](img/settings/settings_alarmrules_bms.png){ width="950" }   
 The BMS alarm rules enable the monitoring of the configured data devices. Various parameters of the Data device can be monitored to configure alarms and trigger automatic actions when certain threshold values ​​are reached.
   
 The voltage trigger is triggered when the voltage falls under the "min" value set or the "Max" value exceeds. In order to avoid unnecessary alarms due to small fluctuations, an adjustable hysteresis can be added, which "calms down" the trigger and is only activated in significant changes.
@@ -260,7 +260,7 @@ The following monitoring functions are available:
 |  | Tension max | Monitoring upper limit |
 
 ### temperature
-![](img/settings/settings_alarmrules_temperatur.png) {Width = "950"}  
+![](img/settings/settings_alarmrules_temperatur.png){ width="950" }  
 At this point, the settings for monitoring the temperature values ​​of the Data devices and OneWire temperature sensors can be configured.
 
 | Option | Description |
@@ -312,7 +312,7 @@ Add to the IP address of the BSC "/Restapi" (e.g. 192.168.1.100/restapi).
 
 The "CC _"-values ​​and" dcc_" values ​​shown represent the electricity limited by the respective loading regulation.
 
-![](img/settings/settings_restapi_aktive_drosselung.png) {Width = "250"}  
+![](img/settings/settings_restapi_aktive_drosselung.png){ width="250" }  
 
 If it is not possible to display the data directly during a throttle event, it is possible to have it temporarily recorded using an alternative platform such as Home Assistant. It should be noted that each query of the rest-API includes all available data.
 
@@ -335,4 +335,4 @@ A firmware update can be initiated directly via the menu.
 Information on the current release stand, as well as the suitable description of the changes is displayed live.  
 Correctly set network gateway is required for live information.
 
-![](img/settings/settings_ota_update.png) {Width = "400"}  
+![](img/settings/settings_ota_update.png){ width="400" }  

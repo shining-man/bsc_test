@@ -43,7 +43,7 @@ This is just an extract from the answer and not complete!
 ```
 
 ### 2. All Active-Nerrors [GET]
-> Note: This end point is only available in the [Insider Version](insider.md).
+> Note: This end point is only available in the [Insider version](insider.md).
 
 End point: `/restapi/errors/all`
 
@@ -62,7 +62,7 @@ This end point returns all possible errors of the system, including a label, whe
 ```
 
 ### 3. Active reror [get]
-> Note: This end point is only available in the [Insider Version](insider.md).
+> Note: This end point is only available in the [Insider version](insider.md).
 
 End point: `/restapi/errors/active`
 
@@ -79,7 +79,7 @@ This end point only returns the system that is currently active. The format is i
 ```
 
 ### 4. IO data [get]
-> Note: This end point is only available in the [Insider Version](insider.md).
+> Note: This end point is only available in the [Insider version](insider.md).
 
 End point: `/restapi/io`
 
@@ -95,7 +95,7 @@ This end point returns the condition of the digital inputs (DI) and relay.
 ```
 
 ### 5. Vtrigger [Post]
-> Note: This end point is only available in the [Insider Version](insider.md).
+> Note: This end point is only available in the [Insider version](insider.md).
 
 End point: `/restapi/vTrigger`
 

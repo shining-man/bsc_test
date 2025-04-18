@@ -19,7 +19,7 @@ Please make sure that the RJ45 final resistance included in Victron is set at th
 * L on l
 * GND on GND
 
-| Can | [Victron VE.Can Port](https://www.victronenergy.com/live/battery_compatibility:can-bus_bms-cable) |
+| Can | [Victron Ve.can Port](https://www.victronenergy.com/live/battery_compatibility:can-bus_bms-cable) |
 | --- | --- |
 | CAN-GND | PIN 3 |
 | CAN-L | PIN 8 |
@@ -29,7 +29,7 @@ Please make sure that the RJ45 final resistance included in Victron is set at th
 Settings -> inverter & loading (inverter) -> General  
 ![image](../img/devices/devices_inverter_canbus.png)
 
-The "Send Extended Data" option only has a function in conjunction with the [dbus-bsc-can](https://github.com/shining-man/dbus-bsc-can).  
+The "Send Extended Data" option only has a function in conjunction with the [DBus-BSC-CAN](https://github.com/shining-man/dbus-bsc-can).  
 
 In conjunction with a Cerbogx, the option **unspecific** is because this hardware has too little performance and problems can result.  
 The problems may be that in rare cases, a SoC of 0% for approx. 30s is transmitted in rare cases!
@@ -51,7 +51,7 @@ Everything is recognized
 #### The battery is unloaded into the network
 The SoC reaches 100% and is discharged again when switching to the Float voltage.  
 Reason: This is one of the **BSC independent behavior**. If the option "DC PV feed-in from excess" is activated in the Victron settings with ESS, the Victron System tries to lower the voltage by unloading to the Float voltage.  
-~~ Remedy: For example, lower the voltage difference between float and absorption volume to 0.4V. In order to prevent constant charging and unloading over the day, the setting for "float charging voltage SoC" should not be set too high in the BSC, otherwise the absorption will change excitement and the process begins from the front. ~~
+~~Remedy: e.g. lowering the voltage difference between float and absorption voltage to 0.4V. In order to prevent constant charging and unloading over the day, the setting for "Float charging voltage SoC" should not be set too high in the BSC, otherwise the excitement will switch to the absorption and the process begins from the front.~~
 
 #### The charging current limit (CCL) is ignored
 If the BSC changes from absorption to Float-Voltage, the charging current limit is set to 0A. The Victron System ignores this setting under certain circumstances.  
@@ -125,7 +125,7 @@ This port is connected to a commercially available network cable. Three individu
 | CAN-GND | PIN 6 | Orange |
 
 
-![](../img/devices/devices_inverter_deye_sun_12k_sg04lp3-eu.png) {Width = "450"}
+![](../img/devices/devices_inverter_deye_sun_12k_sg04lp3-eu.png){ width="450" }
 
 #### Setting on the inverter
 "Bat Set 1: Batt Mode" Lithium ", asked Set 3:" Lithium Mode 00 "   

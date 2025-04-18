@@ -37,7 +37,7 @@ For a correct configuration, the addresses of the BMS and DDM (Data Device mappi
 
 Here is the dissolution of the status reports of the NEEY:
 
-![](../img/devices/devices_neey_status.png) {Width = "520"}
+![](../img/devices/devices_neey_status.png){  width="520" }
 
 
 ## Conclusion examples
@@ -55,7 +55,7 @@ Note: [JP6](../hardware.md#j6-fur-den-regularen-betrieb) must be closed.
 
 #### Connection options shown graphically
 
-**When contacting via the RJ45 connection, [dieser](../hardware.md#j6-fur-den-regularen-betrieb) jumper must be set.**
+**When contacting via the RJ45 connection, [this](../hardware.md#j6-fur-den-regularen-betrieb) jumper must be set.**
 
 ![](../img/devices/devices_seplos_config_single.png)
 
@@ -76,8 +76,8 @@ Note: [JP6](../hardware.md#j6-fur-den-regularen-betrieb) must be closed.
 - A BSC alarm is a "Protection" in the Seplos BMS
 
 #### Further information
-[Anleitung Firmware Update](../files/SEPLOS_BatteryMonitor_Firmware_updating_Guide.pdf)  
-[FAQ Sammlung](https://akkudoktor.net/t/seplos-bms-faq-sammlung/8843) (battery doctor)
+[Instructions for firmware update](../files/SEPLOS_BatteryMonitor_Firmware_updating_Guide.pdf)  
+[FAQ collection](https://akkudoktor.net/t/seplos-bms-faq-sammlung/8843) (battery doctor)
 
 ### Sylcin
 
@@ -88,7 +88,7 @@ Connection of several batteries via Serial 2 from the BSC is possible.
 * Each additional battery must also be clamped in parallel to the respective RS485-1.
 * PIN 4 and 5 is always used in the RS485-1.
 * At the RS485 at the beginning and end of the bus, schedule resistance with a 120Ohm.
-* If you contact the RJ45 connection, [dieser](../hardware.md#j6-fur-den-regularen-betrieb) Jumper must be set
+* If you contact the RJ45 connection, [this](../hardware.md#j6-fur-den-regularen-betrieb) Jumper must be set
 * Setting the Sylcin BMS under Serial 2
 * Define the number of packs in the settings (see images Seplos BMS)
 
@@ -120,7 +120,7 @@ Each pack gets its own ID, which can be defined via the DIP switches. No address
 
 #### Configure RS485 data transmission (BMS) in the BSC software
 * For direct connection via Serial2: In the BSC under Settings -> Interfaces -> Serial2 Select the "JK inverter BMS", since only one interface for several packs has to be used in the Daisychain network.
-* The device mapping configuration of the connected devices is explained [hier](../settings_bsc.md/#data-device-mapping)  
+* The device mapping configuration of the connected devices is explained [here](../settings_bsc.md/#data-device-mapping)  
 * After that, each pack in the BSC should be found under the live data -> BMS data.  
 
 #### CAN data transmission (inverter) configure
@@ -131,7 +131,7 @@ For the transfer of the data via CAN to e.g. a Victron Cerbogx, you must make th
  4. Under "ValueHandling Multi-BMS" determine how the SoC is to be transferred / calculated. "Average", for example, hands the average over all connected BMS.
  5. Select data source (Master) (for example, the temperature refers to Victron under the point "Battery Temperature", the max and min temperatures across all packs, remain unaffected) and select another serial interface for each additional BMS under "+data source".  
 
-![](../img/settings/settings_inverter_datquelle.png) {Width = "550"}
+![](../img/settings/settings_inverter_datquelle.png){  width="550" }
 
 #### Special features
 ##### Assignment of the temperature sensors

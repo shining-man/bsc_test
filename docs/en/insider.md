@@ -18,7 +18,7 @@ _Why is that important?_ The exclusivity of this content is an essential incenti
 
 ## So you become a sponsor and insider 💎
 
-* **Visit our sponsorship page on Github:** [GitHub Sponsors](https://github.com/sponsors/shining-man)
+* **Visit our sponsorship page on Github:** [Github Sponsors](https://github.com/sponsors/shining-man)
 * **Become a insider:** After completing the sponsorship, you will automatically receive insider status and get access to the insider repository-you can get started right away!
 
 ## Your support makes the difference
