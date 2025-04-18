@@ -55,28 +55,28 @@ markdown_extensions:
 nav:
   - User Guide:
     - Systemoverview: system_overview.md
-    - First Steps: first_steps.md
+    - First steps: first_steps.md
     - Hardware: hardware.md
-    - BSC Konfiguration:
+    - BSC Configuration:
       - Dashboard: dashboard.md
-      - Allgemein: settings_bsc.md
-      - Wechselrichter: settings_inverter.md
-      - Beispielkonfigurationen: beispiel_konfigurationen.md
-      - Das Log des BSC: log.md
-    - Unterstüzte Geräte:
+      - General: settings_bsc.md
+      - Inverter: settings_inverter.md
+      - Example configurations: beispiel_konfigurationen.md
+      - The log of the BSC: log.md
+    - Supported devices:
       - BMS: devices/bms.md
-      - Wechselrichter: devices/wechselrichter.md
-      - Externe Shunts: devices/externer_shunt.md
+      - Inverter: devices/wechselrichter.md
+      - External shunts: devices/externer_shunt.md
     - MQTT: mqtt.md
     - REST-API: restapi.md
     - Troubleshooting: troubleshooting.md 
-    - Sonstiges: 
-      - Test ohne BSC Hardware: BSC_ohne_orig_hardware.md
-      - Bestückung Varianten: bestückung_varianten.md
+    - Miscellaneous: 
+      - Test without BSC hardware: BSC_ohne_orig_hardware.md
+      - Assembly variants: bestückung_varianten.md
   - Insider: insider.md
   - Issues:
     - Issues: https://github.com/shining-man/bsc_fw/issues
-    - Issues (Nur für Sponsoren): https://github.com/bsc-org/bsc_fw_insider/issues
+    - Issues (For sponsors only): https://github.com/bsc-org/bsc_fw_insider/issues
   - Blog:
     - blog/index.md
   - Shop:
