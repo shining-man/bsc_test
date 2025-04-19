@@ -13,7 +13,7 @@ Als Sponsor wirst du automatisch zu einem Insider und erhältst exklusiven Zugri
 ## Fair Use – Verantwortungsvoller Umgang mit exklusiven Inhalten ⚖️
 Dein Zugang zum Insider-Repository ist ein exklusiver Vorteil deiner Sponsorenrolle als Insider. Um die Vorteile für alle Insider zu bewahren und die nachhaltige Entwicklung des Projekts zu fördern, bitten wir dich um einen fairen Umgang:
 
-**Keine Weitergabe des Codes oder der Binarys:**  Der Code im Insider-Repository ist weiterhin unter der MIT-Lizenz verfügbar, aber wir haben die Bitte, dass du den Code, die Binarys oder den Zugang zum Insider-Repository nicht öffentlich oder mit Dritten teilst.  
+**Keine Weitergabe des Codes oder der Binarys:**  Der Code im Insider-Repository ist weiterhin unter der <nochange>MIT</nochange>-Lizenz verfügbar, aber wir haben die Bitte, dass du den Code, die Binarys oder den Zugang zum Insider-Repository nicht öffentlich oder mit Dritten teilst.  
 _Warum ist das wichtig?_ Die Exklusivität dieser Inhalte ist ein wesentlicher Anreiz für Sponsoren und Insider. Durch das Weitergeben verliert der Inhalt seinen exklusiven Charakter, was unfair gegenüber denjenigen wäre, die das Projekt aktiv unterstützen.
 
 ## So wirst du Sponsor und Insider 💎
