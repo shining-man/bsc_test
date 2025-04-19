@@ -80,5 +80,5 @@ Voraussetzung ist, dass die Platine programmiert ist!
 * Beim ersten Start der Firmware stellt der BSC einen Accesspoint mit dem Namen "bsc_*" zur Verfügung.
 * Nach dem Verbinden mit dem Accesspoint ist dieser unter der IP-Adresse 192.168.4.1 oder bsc.info erreichbar und kann konfiguriert werden.
 * Zugangsdaten: 
-    - Benutzername: bsc
-    - Passwort: admin
+    - Benutzername: <nochange>bsc</nochange>
+    - Passwort: <nochange>admin</nochange>

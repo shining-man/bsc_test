@@ -80,5 +80,5 @@ The prerequisite is that the board is programmed!
 * When the firmware starts for the first time, the BSC sets an AccessPoint with the name "BSC_* ".
 * After connecting to the AccessSpoint, this can be reached under the IP address 192.168.4.1 or BSC.info and can be configured.
 * Access data:
-    - Username: BSC
-    - Password: admin
+    - Username: <nochange>bsc</nochange>
+    - Password: <nochange>admin</nochange>
