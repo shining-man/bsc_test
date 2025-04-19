@@ -13,7 +13,7 @@ As a sponsor, you automatically become an insider and receive exclusive access t
 ## Fair use - responsible handling of exclusive content ⚖️
 Your access to the insider repository is an exclusive advantage of your sponsorship role as an insider. In order to preserve the advantages for all insiders and to promote the sustainable development of the project, we ask you for a fair handling:
 
-**No transfer of the code or binarys:** The code in the insider repository is still available under the co-license, but we have the request that you do not share the code, binarys or access to the insider repository publicly or with third parties.  
+**No transfer of the code or binarys:** The code in the insider repository is still available under the <nochange>MIT</nochange> license, but we have the request that you do not share the code, binary or access to the insider repository publicly or with third parties.  
 _Why is that important?_ The exclusivity of this content is an essential incentive for sponsors and insiders. By passing on, the content loses its exclusive character, which would be unfair to those who actively support the project.
 
 ## So you become a sponsor and insider 💎
